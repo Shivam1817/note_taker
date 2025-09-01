@@ -2,10 +2,10 @@ import { Router } from "express";
 import { z } from "zod";
 import crypto from "crypto";
 import jwt from "jsonwebtoken";
-import { env } from "../env";
-import { User } from "../models/User";
-import { OtpCode } from "../models/otpCode";
-import { sendOtpEmail, sha256 } from "../utils/email";
+import { env } from "../env.js";
+import { User } from "../models/User.js";
+import { OtpCode } from "../models/otpCode.js";
+import { sendOtpEmail, sha256 } from "../utils/email.js";
 import { OAuth2Client } from "google-auth-library";
 
 const router = Router();

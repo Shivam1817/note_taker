@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from "express";
 import jwt from "jsonwebtoken";
-import { env } from "../env";
-import { JwtPayload } from "../types";
+import { env } from "../env.js";
+import { JwtPayload } from "../types.js";
 
 export function requireAuth(req: Request, res: Response, next: NextFunction) {
   const hdr = req.headers.authorization || "";

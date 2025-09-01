@@ -1,6 +1,6 @@
 import nodemailer from "nodemailer";
 import crypto from "crypto";
-import { env } from "../env";
+import { env } from "../env.js";
 
 export function sha256(s: string): string {
   return crypto.createHash("sha256").update(s).digest("hex");

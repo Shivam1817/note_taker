@@ -1,9 +1,9 @@
 import express from "express";
 import cors from "cors";
 import helmet from "helmet";
-import authRoutes from "./routes/auth";
-import notesRoutes from "./routes/notes";
-import { env } from "./env";
+import authRoutes from "./routes/auth.js";
+import notesRoutes from "./routes/notes.js";
+import { env } from "./env.js";
 
 export function buildApp() {
   const app = express();
